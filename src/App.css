@@ -1,6 +1,8 @@
 body[data-theme="dark"] {
   --background-color: RGB(20, 20, 20);
   --text-color: white;
+  --logo-default: #c0c0c0;
+  --logo-hover: white;
 }
 
 
@@ -11,5 +13,20 @@ body {
 }
 
 .main-content {
-  height: 80vh;
+  height: 78vh;
+  max-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#github-link {
+  color: var(--logo-default);
+  transition: 150ms;
+}
+
+#github-link:hover {
+  color: var(--logo-hover);
+  transform: scale(110%);
 }

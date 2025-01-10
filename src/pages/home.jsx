@@ -1,11 +1,12 @@
 import Header from "../components/Header/header"
 import Footer from "../components/Footer/footer"
+import Nav from "../components/Nav/nav"
 
 const Home = () => {
     return <div>
         <Header /> 
         <div className = "main-content">
-            I'm working on it
+            <Nav />
         </div>
         <Footer />
     </div>;

@@ -1,0 +1,12 @@
+#nav {
+    width: 70vw;
+    height: 40vh;
+    border: 2px solid pink;
+}
+
+.NavButton {
+    display: block;
+    width: 30vw;
+    height: 18vh;
+    border: 2px solid white;
+}
