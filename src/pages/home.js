@@ -3,11 +3,11 @@ import Footer from "../components/Footer/footer"
 
 const Home = () => {
     return <div>
-       <Header /> 
-       <div className = "main-content">
+        <Header /> 
+        <div className = "main-content">
             I'm working on it
-       </div>
-       <Footer />
+        </div>
+        <Footer />
     </div>;
 }
 
