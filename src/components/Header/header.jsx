@@ -2,7 +2,7 @@ import "./header.css";
 
 const Header = () => {
     return <div className="header">
-        <p>Zach's Website</p>
+        <p className="glyph header-text">Zach's Website</p>
     </div>;
 }
 

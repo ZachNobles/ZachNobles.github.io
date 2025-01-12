@@ -1,8 +1,13 @@
 body[data-theme="dark"] {
+  --silver: #c0c0c0;
+
   --background-color: RGB(20, 20, 20);
   --text-color: white;
-  --logo-default: #c0c0c0;
+  --logo-default: var(--silver);
   --logo-hover: white;
+
+  --button-text: var(--silver);
+  --button-border: var(--silver);
 }
 
 
@@ -10,6 +15,19 @@ body {
   background-color: var(--background-color);
   color: var(--text-color);
 
+}
+
+.glyph {
+  font-family: "Major Mono Display", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.geometric {
+  font-family: "Outfit", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .main-content {
@@ -21,12 +39,25 @@ body {
   align-items: center;
 }
 
-#github-link {
+#github-link, #linkedin {
   color: var(--logo-default);
   transition: 150ms;
 }
 
-#github-link:hover {
+#github-link:hover, #linkedin:hover {
   color: var(--logo-hover);
   transform: scale(110%);
+}
+
+.buttonBackground {
+  background-color: var(--background-color);
+  color: var(--button-text);
+  text-decoration: none;
+  border-color: var(--button-border);
+
+  transition: border 150ms;
+}
+
+.buttonBackground:hover {
+  border: transparent;
 }
