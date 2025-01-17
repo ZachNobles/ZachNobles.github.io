@@ -8,6 +8,11 @@ body[data-theme="dark"] {
 
   --button-text: var(--silver);
   --button-border: var(--silver);
+
+  --home-button: var(--silver);
+
+  --about-link-text: RGB(83, 165, 224);
+  --about-link-hover: RGB(109, 193, 252);
 }
 
 
@@ -15,6 +20,19 @@ body {
   background-color: var(--background-color);
   color: var(--text-color);
 
+}
+
+.page {
+  width: 100vw;
+  max-width: 100vw;
+  justify-self: center;
+}
+
+@media (min-aspect-ratio: 1/1) {
+  .page {
+    width: 70vw; /* width for computers */
+    max-width: 70vw;
+  }
 }
 
 .glyph {
@@ -27,6 +45,13 @@ body {
   font-family: "Outfit", serif;
   font-optical-sizing: auto;
   font-weight: 400;
+  font-style: normal;
+}
+
+.exo {
+  font-family: "Exo 2", serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
   font-style: normal;
 }
 
@@ -44,8 +69,8 @@ body {
   transition: 150ms;
 }
 
-#github-link:hover, #linkedin:hover {
-  color: var(--logo-hover);
+#github-link:hover, #linkedin:hover, .home-button:hover {
+  color: var(--logo-hover) !important;
   transform: scale(110%);
 }
 
@@ -60,4 +85,23 @@ body {
 
 .buttonBackground:hover {
   border: transparent;
+}
+
+.home-button {
+  color: var(--home-button) !important;
+  transition: 150ms !important;
+}
+
+.no-link-styling, .no-link-styling:visited {
+  text-decoration: inherit;
+  color: inherit;
+}
+
+.about-link {
+  color: var(--about-link-text) !important;
+  transition: 150ms;
+}
+
+.about-link:hover {
+  color: var(--about-link-hover) !important;
 }
