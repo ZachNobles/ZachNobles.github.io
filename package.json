@@ -1,19 +1,21 @@
 {
   "name": "zachnobles.github.io",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "homepage": "https://zachnobles.github.io",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.14.0",
     "@emotion/styled": "^11.14.0",
+    "@fontsource/roboto": "^5.1.1",
     "@mui/icons-material": "^6.4.0",
     "@mui/material": "^6.4.0",
+    "@types/react-router-dom": "^5.3.3",
     "cra-template": "1.2.0",
     "express": "^4.21.2",
     "fs": "^0.0.1-security",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-    "react-router-dom": "^7.1.1",
+    "react-router-dom": "^7.1.2",
     "react-scripts": "^5.0.1",
     "styled-components": "^6.1.14",
     "web-vitals": "^4.2.4"
@@ -45,6 +47,8 @@
     ]
   },
   "devDependencies": {
-    "gh-pages": "^6.3.0"
+    "gh-pages": "^6.3.0",
+    "source-map-loader": "^5.0.0",
+    "style-loader": "^4.0.0"
   }
 }

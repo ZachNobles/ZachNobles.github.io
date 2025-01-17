@@ -1,3 +1,5 @@
+import React from 'react'
+
 export function NavButton(link, label) {
     return(
         <a

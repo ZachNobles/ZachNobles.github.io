@@ -1,3 +1,4 @@
+import React from 'react'
 import "./about.css"
 import me from "../../images/me.jpg"
 import { IconButton } from '@mui/material';

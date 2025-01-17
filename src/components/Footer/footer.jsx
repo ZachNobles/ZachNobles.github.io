@@ -1,3 +1,4 @@
+import React from 'react'
 import "./footer.css";
 import Tooltip from '@mui/material/Tooltip';
 

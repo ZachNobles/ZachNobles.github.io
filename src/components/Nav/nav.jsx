@@ -1,3 +1,4 @@
+import React from 'react'
 import { NavButton } from "./button";
 import "./nav.css"
 
