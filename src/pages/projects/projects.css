@@ -1,0 +1,10 @@
+#projects-container {
+    width: inherit;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.projects {
+    width: inherit;
+}
