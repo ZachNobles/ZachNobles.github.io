@@ -2,9 +2,9 @@ import './App.css';
 
 import React from "react";
 import {
-    BrowserRouter as Router,
+    HashRouter as Router,
     Routes,
-    Route,
+    Route
 } from "react-router-dom";
 import Home from "./pages/home";
 import About from "./pages/about/about";
@@ -13,14 +13,14 @@ import Projects from "./pages/projects/projects"
 function App() {
   return (
     <div className="App">
-      <Router>
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/home" element={<Home />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/projects" element={<Projects />} />
-          </Routes>
-      </Router>
+        <Router>
+            <Routes>
+              <Route exact path="/" element={<Home />} />
+              <Route exact path="/home" element={<Home />} />
+              <Route exact path="/about" element={<About />} />
+              <Route exact path="/projects" element={<Projects />} />
+            </Routes>
+        </Router>
     </div>
   );
 }

@@ -7,7 +7,7 @@ export function NavButton(link, label) {
         aria-label={label}
         className="NavButton"
         onMouseEnter={randomizeBackground}>
-            <div className="buttonBackground">{link}</div>
+            <div className="buttonBackground">{label}</div>
         </a>
     );
 }
