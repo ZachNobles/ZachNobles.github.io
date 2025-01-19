@@ -15,6 +15,7 @@ const Footer = () => {
                 <i class="fa fa-linkedin-square"></i
             ></a>
         </Tooltip>
+        <p className="glyph" style={{position: "absolute", right: "1vw", bottom: "0vh", fontSize: "0.5rem"}}>v0.3.2</p>
     </div>;
 }
 
