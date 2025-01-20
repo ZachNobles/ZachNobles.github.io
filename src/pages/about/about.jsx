@@ -1,7 +1,7 @@
 import React from 'react'
 import "./about.css"
 import me from "../../images/me.jpg"
-import { IconButton } from '@mui/material';
+import { IconButton, Tooltip } from '@mui/material';
 import HomeIcon from '@mui/icons-material/Home';
 import { aboutBody1, aboutBody2, aboutBody3 } from "./about-body";
 
@@ -9,14 +9,16 @@ import { aboutBody1, aboutBody2, aboutBody3 } from "./about-body";
 const About = () => {
     return <div className="page">
         <div id="about-container">
-        <IconButton href="/" aria-label="home" size="large" style={{position: "absolute"}} className="home-button"><HomeIcon /></IconButton>
+        <Tooltip title="home" placement="right" style={{position: "absolute"}}>
+            <IconButton href="/" aria-label="home" size="large" className="home-button"><HomeIcon /></IconButton>
+        </Tooltip>
             <div className="glyph" id="about-header">
                 About Me
                 <div className="about-body geometric"  style={{paddingTop: "1rem"}}>
                     {aboutBody1}<br/><br/>{aboutBody2}<br/><br/>{aboutBody3}
                 </div>
             </div>
-            <div id="about-img" style={{backgroundImage: `url(${me})`}}></div>
+            <div id="about-img" style={{backgroundImage: `url(${me})`, borderRadius: "0.5rem"}}></div>
             <div id="extracurriculars">
                 <p className="glyph">extracurriculars</p>
                 Pep Band<br/>The Forge<br/>Senate Academic Affairs Committee<br/>Senate Student Life Committee<br/>Senate Webtech Group<br/>
@@ -42,8 +44,8 @@ const About = () => {
             <div id="about-website">
                 <p className="glyph">About this website</p>
                 <p className="exo">This website was made 
-                    with <a className="no-link-styling about-link" href="https://mui.com/" aria-label="React">React</a>
-                    &nbsp;and <a className="no-link-styling about-link" href="https://react.dev/" aria-label="MUI">MUI</a>
+                    with <a className="no-link-styling about-link" href="https://react.dev/" aria-label="React">React</a>
+                    &nbsp;and <a className="no-link-styling about-link" href="https://mui.com/" aria-label="MUI">MUI</a>
                     . You can look at the source 
                     code <a className="no-link-styling about-link" href="https://github.com/ZachNobles/ZachNobles.github.io" aria-label="GitHub repo">here</a>
                     &nbsp;if you really want to.

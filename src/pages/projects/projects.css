@@ -1,4 +1,4 @@
-#projects-container {
+#projects-main-container {
     width: inherit;
 
     display: flex;
@@ -7,4 +7,58 @@
 
 .projects {
     width: inherit;
+}
+
+.projects-container {
+    width: inherit;
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: auto auto;
+    overflow: hidden;
+}
+
+.gap {
+    margin-bottom: 1rem;
+}
+
+.pleft {
+    grid-column: 1 / span 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.pright {
+    grid-column: 2 / span 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.pboth {
+    grid-column: 1 / span 2;
+}
+
+.pimg-container {
+    overflow: hidden;
+}
+
+.pimg {
+    aspect-ratio: initial;
+    object-fit: fill;
+}
+
+.ptitle {
+    font-size: 2rem;
+    text-align: center;
+}
+
+.psubtitle {
+    font-size: 1rem;
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.pbody {
+    margin-top: 1rem;
+    font-size: 1.25rem;
 }

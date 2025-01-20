@@ -1,6 +1,7 @@
 import React from 'react'
 import "./footer.css";
 import Tooltip from '@mui/material/Tooltip';
+import pkg from '../../../package.json';
 
 const Footer = () => {
     return <div className="footer">
@@ -12,10 +13,10 @@ const Footer = () => {
 
         <Tooltip title="My Linkedin">
             <a href="https://www.linkedin.com/in/zachary-nobles/" target="_blank" rel="noreferrer" id="linkedin">
-                <i class="fa fa-linkedin-square"></i
+                <i className="fa fa-linkedin-square"></i
             ></a>
         </Tooltip>
-        <p className="glyph" style={{position: "absolute", right: "1vw", bottom: "0vh", fontSize: "0.5rem"}}>v0.3.7</p>
+        <p className="glyph" style={{position: "absolute", right: "1vw", bottom: "0vh", fontSize: "0.5rem"}}>v{pkg.version}</p>
     </div>;
 }
 
