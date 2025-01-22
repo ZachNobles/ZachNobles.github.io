@@ -66,6 +66,7 @@ const RoboticsProject = () => {
         </div>
 
         <div className="projects-container">
+            <div className="gap"></div>
             <div className="pboth pimg-container"><img src={project_finished} alt="the arm with a (somewhat precarious) stack of blocks"></img></div>
         </div>
     </div>
