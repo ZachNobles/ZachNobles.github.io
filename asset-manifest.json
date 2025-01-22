@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.0bd0cb42.css",
-    "main.js": "/static/js/main.47959d02.js",
+    "main.js": "/static/js/main.aebd6152.js",
     "static/js/568.aa0e6fbf.chunk.js": "/static/js/568.aa0e6fbf.chunk.js",
     "static/media/dofbot_with_blocks.png": "/static/media/dofbot_with_blocks.c9c6a59d86abe3b8b063.png",
     "static/media/finished.png": "/static/media/finished.bd0dfdb48be9a8329dd1.png",
@@ -21,11 +21,11 @@
     "static/media/matlab_arm.png": "/static/media/matlab_arm.8ab578a36ef1047a41d2.png",
     "index.html": "/index.html",
     "main.0bd0cb42.css.map": "/static/css/main.0bd0cb42.css.map",
-    "main.47959d02.js.map": "/static/js/main.47959d02.js.map",
+    "main.aebd6152.js.map": "/static/js/main.aebd6152.js.map",
     "568.aa0e6fbf.chunk.js.map": "/static/js/568.aa0e6fbf.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.0bd0cb42.css",
-    "static/js/main.47959d02.js"
+    "static/js/main.aebd6152.js"
   ]
 }
