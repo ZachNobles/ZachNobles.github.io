@@ -18,7 +18,7 @@ const About = () => {
                     {aboutBody1}<br/><br/>{aboutBody2}<br/><br/>{aboutBody3}
                 </div>
             </div>
-            <div id="about-img" style={{backgroundImage: `url(${me})`, borderRadius: "0.5rem"}}></div>
+            <div id="about-img" style={{backgroundImage: `url(${me})`, borderRadius: "0.25rem"}}></div>
             <div id="extracurriculars">
                 <p className="glyph">extracurriculars</p>
                 Pep Band<br/>The Forge<br/>Senate Academic Affairs Committee<br/>Senate Student Life Committee<br/>Senate Webtech Group<br/>

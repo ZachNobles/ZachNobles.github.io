@@ -11,6 +11,7 @@
 
 .projects-container {
     width: inherit;
+    height: fit-content;
     display: grid;
     grid-template-rows: auto;
     grid-template-columns: auto auto;
@@ -39,6 +40,7 @@
 
 .pimg-container {
     overflow: hidden;
+    text-align: center;
 }
 
 .pimg {
@@ -61,4 +63,32 @@
 .pbody {
     margin-top: 1rem;
     font-size: 1.25rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+@media (max-aspect-ratio: 1/1) {
+    .pleft {
+        grid-column: 1 / span 1 !important;
+        grid-row: 1 / span 1 !important;
+    }
+
+    .pright {
+        grid-column: 1 / span 1 !important;
+        grid-row: 2 / span 1 !important;
+    }
+
+    .both {
+        grid-column: 1 / span 1;
+        grid-row: 1 / span 2;
+    }
+
+    .projects-container {
+        grid-template-columns: auto !important;
+        grid-template-rows: auto auto !important;
+    }
+
+    .pimg {
+        width: 100vw !important;
+    }
 }
