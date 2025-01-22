@@ -1,6 +1,7 @@
 import React from 'react'
 import "./footer.css";
 import Tooltip from '@mui/material/Tooltip';
+import MailOutlineIcon from '@mui/icons-material/MailOutline';
 import pkg from '../../../package.json';
 
 const Footer = () => {
@@ -13,10 +14,16 @@ const Footer = () => {
 
         <Tooltip title="My Linkedin">
             <a href="https://www.linkedin.com/in/zachary-nobles/" target="_blank" rel="noreferrer" id="linkedin">
-                <i className="fa fa-linkedin-square"></i
-            ></a>
+                <i className="fa fa-linkedin-square"></i>
+            </a>
         </Tooltip>
-        <p className="glyph" style={{position: "absolute", right: "1vw", bottom: "0vh", fontSize: "0.5rem"}}>v{pkg.version}</p>
+
+        <Tooltip title="Email">
+            <a href="mailto:zachnobles04@gmail.com" target="_blank" rel="noreferrer" id="email" style={{display:"flex", placeItems:"center"}}>
+                <MailOutlineIcon fontSize="large"/>
+            </a>
+        </Tooltip>
+        <p className="glyph" style={{ position: "absolute", right: "1vw", bottom: "0vh", fontSize: "0.5rem" }}>v{pkg.version}</p>
     </div>;
 }
 

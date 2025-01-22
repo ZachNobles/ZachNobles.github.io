@@ -65,12 +65,12 @@ body {
   align-items: center;
 }
 
-#github-link, #linkedin {
+#github-link, #linkedin, #email {
   color: var(--logo-default);
   transition: 150ms;
 }
 
-#github-link:hover, #linkedin:hover, .home-button:hover {
+#github-link:hover, #linkedin:hover, #email:hover, .home-button:hover {
   color: var(--logo-hover) !important;
   transform: scale(110%);
 }
