@@ -16,6 +16,7 @@ import blocks6 from "./images/blocks6.png"
 import blocks7 from "./images/blocks7.png"
 import blocks8 from "./images/blocks8.png"
 import blocks_final from "./images/blocks_final.png"
+import project_finished from "./images/finished.png"
 
 const RoboticsProject = () => {
     return <div>
@@ -62,6 +63,10 @@ const RoboticsProject = () => {
 
         <div className="projects-container">
             <div className="pboth pbody">{r1Body8}</div>
+        </div>
+
+        <div className="projects-container">
+            <div className="pboth pimg-container"><img src={project_finished} alt="the arm with a (somewhat precarious) stack of blocks"></img></div>
         </div>
     </div>
 }
