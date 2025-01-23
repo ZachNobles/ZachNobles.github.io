@@ -1,5 +1,6 @@
 import React from 'react'
 import { Divider, ImageList, ImageListItem } from "@mui/material"
+import scroll from "../scroll animation.js"
 import { r1Body, r1Body2, r1Body3, r1Body4, r1Body5, r1Body6, r1Body7, r1Body8 } from "./content/robotics-1.js"
 import dofbot_with_blocks from "./images/dofbot_with_blocks.png"
 import dofbot_fk from "./images/dofbot_fk.png"
@@ -22,7 +23,7 @@ const RoboticsProject = () => {
     return <div>
         <div className="projects-container">
             <div className="pleft">
-                <div className="glyph ptitle" data-text="squares on squares on squares">squares on squares on squares</div>
+                <div className="glyph ptitle no-highlight pointer" data-text="squares on squares on squares" onClick={scroll}>squares on squares on squares</div>
                 <div className="glyph psubtitle">class project for robotics i</div>
                 <Divider variant="middle" flexItem className="pdivider" style={{backgroundColor: "#fe9580"}}></Divider>
                 <div className="geometric pbody">{r1Body}</div>
@@ -67,7 +68,7 @@ const RoboticsProject = () => {
 
         <div className="projects-container">
             <div className="gap"></div>
-            <div className="pboth pimg-container"><img src={project_finished} alt="the arm with a (somewhat precarious) stack of blocks"></img></div>
+            <div className="pboth pimg-container"><img src={project_finished} style={{width: "100%"}} alt="the arm with a (somewhat precarious) stack of blocks"></img></div>
         </div>
     </div>
 }
