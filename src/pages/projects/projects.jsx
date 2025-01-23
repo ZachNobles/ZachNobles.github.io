@@ -38,8 +38,8 @@ function headerLoad() {
     if (!header) return;
     
     let iterations = 0;
+    var text = header.dataset.text;
     const interval = setInterval(() => {
-        var text = header.dataset.text;
         header.innerText = text.split("")
         .map((letter, index) => {
             if (index < (iterations ** 0.6) - 5) {
