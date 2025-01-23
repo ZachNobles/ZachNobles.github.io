@@ -33,26 +33,32 @@ const Projects = () => {
 
 
 const alphabet = "abcdefghijklmnopqrstuvwxyz0123456789@#$%&";
-function headerLoad(event) {
+function headerLoad() {
+    let header = document.getElementById("projects-header")
+    if (!header) return;
+    
     let iterations = 0;
-
     const interval = setInterval(() => {
-        var text = event.target.dataset.text;
-        event.target.innerText = text.split("")
+        var text = header.dataset.text;
+        header.innerText = text.split("")
         .map((letter, index) => {
             if (index < (iterations ** 0.6) - 5) {
-                return event.target.dataset.text[index];
+                return header.dataset.text[index];
             }
             return alphabet[Math.floor(Math.random() * 41)];
         }).join("")
 
         if (iterations >= 100) {
             clearInterval(interval);
-            event.target.innerText = text
+            header.innerText = text
         }
         iterations++;
     }, 40)
 }
+
+window.onload = function() {
+    headerLoad();
+};
 
 
 export default Projects;
