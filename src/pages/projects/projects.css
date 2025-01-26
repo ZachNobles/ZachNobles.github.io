@@ -46,6 +46,7 @@
 .pimg {
     aspect-ratio: initial;
     object-fit: fill;
+    border-radius: 0.25rem;
 }
 
 .ptitle {

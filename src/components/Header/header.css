@@ -9,6 +9,12 @@
     font-size: 2.5rem;
 }
 
+@media (max-aspect-ratio: 2/3) {
+    .header {
+        font-size: 9vw;
+    }
+}
+
 /* this gradient effect is from https://www.youtube.com/watch?v=yu0Cm4BqQv0 */
 
 #home-header {

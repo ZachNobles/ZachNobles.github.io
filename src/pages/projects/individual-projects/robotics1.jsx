@@ -2,12 +2,12 @@ import React from 'react'
 import { Divider, ImageList, ImageListItem } from "@mui/material"
 import scroll from "../scroll animation.js"
 import { r1Body, r1Body2, r1Body3, r1Body4, r1Body5, r1Body6, r1Body7, r1Body8 } from "./content/robotics-1.js"
+
 import dofbot_with_blocks from "./images/dofbot_with_blocks.png"
 import dofbot_fk from "./images/dofbot_fk.png"
 import dofbot_fk2 from "./images/dofbot_fk2.png"
 import matlab_arm from "./images/matlab_arm.png"
 import block_stack from "./images/block_stack.png"
-
 import blocks1 from "./images/blocks1.png"
 import blocks2 from "./images/blocks2.png"
 import blocks3 from "./images/blocks3.png"
@@ -58,7 +58,7 @@ const RoboticsProject = () => {
             <ImageListItem><img src={blocks8} alt="4 blocks with 2 correctly located"></img></ImageListItem>
             </ImageList></div>
             <div className="pright pbody">{r1Body6}<br/><br/><br/>{r1Body7}
-                <div className="pimg-container"><img src={blocks_final} alt="four blocks with colored dots to label them" style={{height: "15rem"}}></img></div>
+                <div className="pimg-container"><img className="pimg" src={blocks_final} alt="four blocks with colored dots to label them" style={{height: "15rem"}}></img></div>
             </div>
         </div>
 
@@ -68,7 +68,7 @@ const RoboticsProject = () => {
 
         <div className="projects-container">
             <div className="gap"></div>
-            <div className="pboth pimg-container"><img src={project_finished} style={{width: "100%"}} alt="the arm with a (somewhat precarious) stack of blocks"></img></div>
+            <div className="pboth pimg-container"><img className="pimg" src={project_finished} style={{width: "100%"}} alt="the arm with a (somewhat precarious) stack of blocks"></img></div>
         </div>
     </div>
 }

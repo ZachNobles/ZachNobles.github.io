@@ -4,6 +4,7 @@ import { IconButton, Tooltip, Divider } from '@mui/material';
 import HomeIcon from '@mui/icons-material/Home';
 
 import RoboticsProject from "./individual-projects/robotics1.jsx";
+import EmbeddedProject from './individual-projects/embedded.jsx';
 
 const Projects = () => {
     return <div className="page">
@@ -21,6 +22,10 @@ const Projects = () => {
         <Divider flexItem className="divider" style={{width: "inherit"}}/>
         <div className="gap"></div>
 
+        <EmbeddedProject />
+        <div className="gap"></div>
+        <Divider flexItem className="divider" style={{width: "inherit"}}/>
+        <div className="gap"></div>
         <RoboticsProject />
 
         <div className="gap"></div>
