@@ -23,12 +23,12 @@ const Projects = () => {
         <div className="gap"></div>
 
         <EmbeddedProject />
-        <div className="gap"></div>
+        <div className="gap" style={{height:"2vh"}}></div>
         <Divider flexItem className="divider" style={{width: "inherit"}}/>
-        <div className="gap"></div>
+        <div className="gap" style={{height:"2vh"}}></div>
         <RoboticsProject />
 
-        <div className="gap"></div>
+        <div className="gap" style={{height:"2vh"}}></div>
         <Divider flexItem className="divider" style={{width: "inherit"}}/>
 
         <div className="projects-container exo" style={{textAlign:"center"}}><div className="pboth">more projects to come, but it takes me a while to track down all the images and write descriptions</div></div>

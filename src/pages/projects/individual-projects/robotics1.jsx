@@ -24,7 +24,7 @@ const RoboticsProject = () => {
         <div className="projects-container">
             <div className="pleft">
                 <div className="glyph ptitle no-highlight pointer" data-text="squares on squares on squares" onClick={scroll}>squares on squares on squares</div>
-                <div className="glyph psubtitle">class project for robotics i</div>
+                <div className="glyph psubtitle">class project for robotics i - fall 2024</div>
                 <Divider variant="middle" flexItem className="pdivider" style={{backgroundColor: "#fe9580"}}></Divider>
                 <div className="geometric pbody">{r1Body}</div>
             </div>
