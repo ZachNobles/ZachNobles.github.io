@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.fd0573f0.css",
-    "main.js": "/static/js/main.2394bed8.js",
+    "main.js": "/static/js/main.aef720b9.js",
     "static/js/568.aa0e6fbf.chunk.js": "/static/js/568.aa0e6fbf.chunk.js",
     "static/media/wheels_spinning.gif": "/static/media/wheels_spinning.3a7e30943c12404366c0.gif",
     "static/media/dofbot_with_blocks.png": "/static/media/dofbot_with_blocks.c9c6a59d86abe3b8b063.png",
@@ -25,11 +25,11 @@
     "static/media/matlab_arm.png": "/static/media/matlab_arm.8ab578a36ef1047a41d2.png",
     "index.html": "/index.html",
     "main.fd0573f0.css.map": "/static/css/main.fd0573f0.css.map",
-    "main.2394bed8.js.map": "/static/js/main.2394bed8.js.map",
+    "main.aef720b9.js.map": "/static/js/main.aef720b9.js.map",
     "568.aa0e6fbf.chunk.js.map": "/static/js/568.aa0e6fbf.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.fd0573f0.css",
-    "static/js/main.2394bed8.js"
+    "static/js/main.aef720b9.js"
   ]
 }
