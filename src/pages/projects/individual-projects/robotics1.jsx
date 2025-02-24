@@ -38,7 +38,7 @@ const RoboticsProject = () => {
 
         <div className="projects-container">
             <div className="pleft pimg-container"><img className="pimg" src={matlab_arm} alt = "robot arm posed at an angle"></img></div>
-            <div className="pright pbody pimg-container">{r1Body3}<br/><br/><br/>{r1Body4}</div>
+            <div className="pright pbody">{r1Body3}<br/><br/><br/>{r1Body4}</div>
         </div>
 
         <div className="projects-container">
