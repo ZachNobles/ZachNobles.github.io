@@ -17,7 +17,7 @@
 
 /* this gradient effect is from https://www.youtube.com/watch?v=yu0Cm4BqQv0 */
 
-#home-header {
+#home-header, #misc-header {
     background: linear-gradient(
         to right,
         #6a19d5,

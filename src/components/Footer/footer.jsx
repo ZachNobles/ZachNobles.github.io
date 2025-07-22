@@ -19,7 +19,7 @@ const Footer = () => {
         </Tooltip>
 
         <Tooltip title="Email">
-            <a href="mailto:zachnobles04@gmail.com" target="_blank" rel="noreferrer" id="email" style={{display:"flex", placeItems:"center"}}>
+            <a href="mailto:zachnobles@outlook.com" target="_blank" rel="noreferrer" id="email" style={{display:"flex", placeItems:"center"}}>
                 <MailOutlineIcon fontSize="large"/>
             </a>
         </Tooltip>

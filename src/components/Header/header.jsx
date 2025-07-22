@@ -3,8 +3,8 @@ import "./header.css";
 
 const Header = () => {
     return <div className="header">
-        <p className="glyph" id="home-header">Zach's Website</p>
-        <p className="glyph" style={{fontSize: "0.75rem"}}>(work in progress)</p>
+        <p className="glyph" id="home-header">zach's website</p>
+        <p className="glyph" style={{fontSize: "0.75rem"}}>hi</p>
     </div>;
 }
 

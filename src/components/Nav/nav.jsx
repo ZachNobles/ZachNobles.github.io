@@ -6,6 +6,7 @@ const Nav = () => {
     return <div id="nav">
         {NavButton("projects", "projects")}
         {NavButton("about", "about")}
+        {NavButton("miscellaneous", "misc.")}
     </div>;
 }
 

@@ -3,11 +3,15 @@ body[data-theme="dark"] {
 
   --background-color: RGB(20, 20, 20);
   --text-color: white;
+  --secondary-text-color: var(--silver);
   --logo-default: var(--silver);
   --logo-hover: white;
 
   --button-text: var(--silver);
   --button-border: var(--silver);
+
+  --icon-button: var(--silver);
+  --icon-button-hover: white;
 
   --home-button: var(--silver);
 
@@ -15,6 +19,8 @@ body[data-theme="dark"] {
   --about-link-hover: RGB(109, 193, 252);
 
   --divider: var(--silver);
+
+  --textbox-border: var(--silver);
 }
 
 
@@ -36,24 +42,28 @@ body {
   }
 }
 
-.glyph {
+.glyph, .glyph input {
   font-family: "Major Mono Display", serif;
   font-weight: 400;
   font-style: normal;
 }
 
-.geometric {
+.geometric, .geometric input {
   font-family: "Outfit", serif;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
 }
 
-.exo {
+.exo, .exo input {
   font-family: "Exo 2", serif;
   font-optical-sizing: auto;
   font-weight: 100;
   font-style: normal;
+}
+
+.secondary {
+  color: var(--secondary-text-color);
 }
 
 .main-content {
@@ -88,6 +98,16 @@ body {
   border: transparent;
 }
 
+.generic-icon-button {
+  color: var(--icon-button);
+  transition: 150ms !important;
+}
+
+.generic-icon-button:hover {
+  color: var(--icon-button-hover);
+  transform: scale(110%);
+}
+
 .home-button {
   color: var(--home-button) !important;
   transition: 150ms !important;
@@ -109,6 +129,18 @@ body {
 
 .divider {
   background-color: var(--divider);
+}
+
+.textfield input {
+  color: var(--text-color)
+}
+
+.textfield .MuiOutlinedInput-root .MuiOutlinedInput-notchedOutline {
+  border-color: var(--textbox-border) !important;
+}
+
+.chip .MuiChip-label {
+  color: var(--text-color);
 }
 
 .pointer {
