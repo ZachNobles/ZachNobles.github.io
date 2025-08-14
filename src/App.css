@@ -1,5 +1,6 @@
 body[data-theme="dark"] {
   --silver: #c0c0c0;
+  --purple: #6a19d5;
 
   --background-color: RGB(20, 20, 20);
   --text-color: white;
@@ -9,6 +10,11 @@ body[data-theme="dark"] {
 
   --button-text: var(--silver);
   --button-border: var(--silver);
+
+  --generic-button-border: var(--purple);
+
+  --generic-radio-border: var(--purple);
+  --generic-radio-fill: var(--purple);
 
   --icon-button: var(--silver);
   --icon-button-hover: white;
@@ -96,6 +102,45 @@ body {
 
 .buttonBackground:hover {
   border: transparent;
+}
+
+.generic-button {
+  background-color: transparent;
+  color: var(--text-color);
+  border: 2px solid var(--generic-button-border);
+  border-radius: 0.5rem;
+  transition: background-color 0.2s;
+}
+
+.generic-button:hover {
+  background-color: var(--generic-button-border);
+}
+
+.generic-radio {
+  opacity: 0;
+}
+
+.generic-radio-overlay {
+  position: relative;
+  border: 2px solid var(--generic-radio-border);
+  border-radius: 50%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.2s;
+}
+
+.generic-radio-overlay .generic-radio-check {
+  opacity: 0;
+}
+
+.generic-radio-overlay:hover {
+  background-color: var(--generic-radio-border);
+}
+
+.generic-radio-container input:checked ~ .generic-radio-overlay .generic-radio-check {
+  opacity: 1;
 }
 
 .generic-icon-button {
