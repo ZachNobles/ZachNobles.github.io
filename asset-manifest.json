@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.54a6290c.css",
-    "main.js": "/static/js/main.b5a7f400.js",
+    "main.css": "/static/css/main.3c09dfc7.css",
+    "main.js": "/static/js/main.dc40dc81.js",
     "static/js/568.aa0e6fbf.chunk.js": "/static/js/568.aa0e6fbf.chunk.js",
     "static/media/wheels_spinning.gif": "/static/media/wheels_spinning.3a7e30943c12404366c0.gif",
     "static/media/dofbot_with_blocks.png": "/static/media/dofbot_with_blocks.c9c6a59d86abe3b8b063.png",
@@ -23,13 +23,14 @@
     "static/media/block_stack.png": "/static/media/block_stack.51642d7a165d95c23f09.png",
     "static/media/blocks1.png": "/static/media/blocks1.ac1f367033f04e8f8a6b.png",
     "static/media/matlab_arm.png": "/static/media/matlab_arm.8ab578a36ef1047a41d2.png",
+    "static/media/RPI_Logo_Binary_White.png": "/static/media/RPI_Logo_Binary_White.92df1258eb033f33745c.png",
     "index.html": "/index.html",
-    "main.54a6290c.css.map": "/static/css/main.54a6290c.css.map",
-    "main.b5a7f400.js.map": "/static/js/main.b5a7f400.js.map",
+    "main.3c09dfc7.css.map": "/static/css/main.3c09dfc7.css.map",
+    "main.dc40dc81.js.map": "/static/js/main.dc40dc81.js.map",
     "568.aa0e6fbf.chunk.js.map": "/static/js/568.aa0e6fbf.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.54a6290c.css",
-    "static/js/main.b5a7f400.js"
+    "static/css/main.3c09dfc7.css",
+    "static/js/main.dc40dc81.js"
   ]
 }
