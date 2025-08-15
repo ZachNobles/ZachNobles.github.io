@@ -361,7 +361,7 @@ const Binary = () => {
                         const filtered = e.target.value.replace(/[^01]/g, "");
                         setInputText(filtered);
                     }}
-                    maxLength={50}
+                    maxLength={80}
                     style={{ 
                         marginBottom: "2rem", 
                         width: "400px",
