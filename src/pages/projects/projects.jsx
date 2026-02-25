@@ -5,6 +5,7 @@ import HomeIcon from '@mui/icons-material/Home';
 
 import RoboticsProject from "./individual-projects/robotics1.jsx";
 import EmbeddedProject from './individual-projects/embedded.jsx';
+import ResearchProject from './individual-projects/stretch.jsx';
 
 const Projects = () => {
     return <div className="page">
@@ -26,9 +27,13 @@ const Projects = () => {
         <div className="gap" style={{height:"2vh"}}></div>
         <Divider flexItem className="divider" style={{width: "inherit"}}/>
         <div className="gap" style={{height:"2vh"}}></div>
-        <RoboticsProject />
 
+        <RoboticsProject />
         <div className="gap" style={{height:"2vh"}}></div>
+        <Divider flexItem className="divider" style={{width: "inherit"}}/>
+        <div className="gap" style={{height:"2vh"}}></div>
+
+        <ResearchProject />
         <Divider flexItem className="divider" style={{width: "inherit"}}/>
 
         <div className="projects-container exo" style={{textAlign:"center"}}><div className="pboth">more projects to come, but it takes me a while to track down all the images and write descriptions</div></div>

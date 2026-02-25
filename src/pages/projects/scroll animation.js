@@ -6,7 +6,7 @@ export default function scroll(event) {
     const interval = setInterval(() => {
         event.target.innerText = text.split("")
         .map((letter, index) => {
-            if (index < iterations) {
+            if (index < iterations * 0.6) {
                 return event.target.dataset.text[index];
             } else if (letter === " ") {
                 return " "
@@ -19,5 +19,5 @@ export default function scroll(event) {
             event.target.innerText = text
         }
         iterations++;
-    }, 80)
+    }, 60)
 }

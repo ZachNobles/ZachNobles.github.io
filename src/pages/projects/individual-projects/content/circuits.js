@@ -1,0 +1,3 @@
+var circuitsBody1 = "Electric Circuits was structured to have one big group project spanning the semester, and ours was a circuit that monitored atmospheric air pressure. It used the input from a cheap pressire sensor that broke the night before we presented the first part of the project. The final version contained an astable and monostable multivibrator, multiple amplifiers and comparators, a step down transformer, a full bridge rectifier, a low pass filter, and a differentiator. We carried it all across campus in a plastic bin."
+
+export { circuitsBody1 }
