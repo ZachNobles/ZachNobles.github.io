@@ -1,4 +1,4 @@
-body[data-theme="dark"] {
+body, body[data-theme="dark"] {
   --accent: #6a19d5;
   --accent2: #c0c0c0;
 
@@ -21,8 +21,8 @@ body[data-theme="dark"] {
 
   --home-button: var(--accent2);
 
-  --about-link-text: RGB(83, 165, 224);
-  --about-link-hover: RGB(109, 193, 252);
+  --about-link-text: #53a5e0;
+  --about-link-hover: #6dc1fc;
 
   --divider: var(--accent2);
 
@@ -69,7 +69,7 @@ body {
 .exo, .exo input {
   font-family: "Exo 2", serif;
   font-optical-sizing: auto;
-  font-weight: 100;
+  font-weight: 200;
   font-style: normal;
 }
 

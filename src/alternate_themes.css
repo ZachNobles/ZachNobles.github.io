@@ -1,0 +1,35 @@
+body[data-theme="light"] {
+  --accent: #a373e2;
+  --accent2: #440064;
+
+  --background-color: white;
+  --text-color: black;
+  --secondary-text-color: var(--accent2);
+  --logo-default: black;
+  --logo-hover: var(--accent2);
+
+  --button-text: var(--text-color);
+  --button-border: var(--accent2);
+
+  --generic-button-border: var(--accent);
+
+  --generic-radio-border: var(--accent);
+  --generic-radio-fill: var(--accent);
+
+  --icon-button: var(--accent2);
+  --icon-button-hover: white;
+
+  --home-button: var(--accent2);
+
+  --about-link-text: #0080ff;
+  --about-link-hover: #0a2b57;
+
+  --divider: var(--accent2);
+
+  --textbox-border: var(--accent2);
+
+  --drawer-background-color: #e4e4e4;
+  --drawer-text-color: var(--text-color);
+  --drawer-item-background: var(--drawer-background-color);
+  --drawer-item-border: var(--accent);
+}
