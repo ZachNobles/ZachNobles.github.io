@@ -1,7 +1,7 @@
 import React from 'react'
 import { Divider } from "@mui/material"
 import { embeddedBody1, embeddedBody2, embeddedBody3, embeddedBody4, embeddedBody5 } from './content/embedded.js'
-import scroll from "../scroll animation.js"
+import { scroll } from "../scroll animation.js"
 import car from "./images/beep beep.png"
 import potentiometers from "./images/potentiometers.png"
 import wheels_spinning from "./images/wheels_spinning.gif"

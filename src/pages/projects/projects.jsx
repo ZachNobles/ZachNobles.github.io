@@ -8,6 +8,7 @@ import RoboticsProject from "./individual-projects/robotics1.jsx";
 import EmbeddedProject from './individual-projects/embedded.jsx';
 import ResearchProject from './individual-projects/stretch.jsx';
 import MPSProject from "./individual-projects/theremin.jsx";
+import SRP1Project from './individual-projects/SRP1.jsx';
 
 function TemporaryDrawer() {
     const [open, setOpen] = React.useState(false);
@@ -75,7 +76,13 @@ const Projects = () => {
         <div className="gap" style={{height:"2vh"}}></div>
 
         <MPSProject />
+        <div className="gap" style={{height:"2vh"}}></div>
         <Divider flexItem className="divider" style={{width: "inherit"}}/>
+        <div className="gap" style={{height:"2vh"}}></div>
+
+        {/* <SRP1Project />
+        <div className="gap" style={{height:"2vh"}}></div>
+        <Divider flexItem className="divider" style={{width: "inherit"}}/> */}
 
         <div className="projects-container exo" style={{textAlign:"center"}}><div className="pboth">more projects to come, but it takes me a while to track down all the images and write descriptions</div></div>
         <div className="gap" style={{height: "10vh"}}></div>

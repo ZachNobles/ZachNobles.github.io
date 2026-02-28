@@ -21,8 +21,8 @@ body, body[data-theme="dark"] {
 
   --home-button: var(--accent2);
 
-  --about-link-text: #53a5e0;
-  --about-link-hover: #6dc1fc;
+  --link-text: #53a5e0;
+  --link-hover: #6dc1fc;
 
   --divider: var(--accent2);
 
@@ -168,13 +168,13 @@ body {
   color: inherit;
 }
 
-.about-link {
-  color: var(--about-link-text) !important;
+.link {
+  color: var(--link-text) !important;
   transition: 150ms;
 }
 
-.about-link:hover {
-  color: var(--about-link-hover) !important;
+.link:hover {
+  color: var(--link-hover) !important;
 }
 
 .divider {

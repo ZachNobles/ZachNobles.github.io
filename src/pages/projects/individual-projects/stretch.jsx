@@ -1,6 +1,6 @@
 import React from 'react'
 import { Divider, ImageList, ImageListItem } from "@mui/material"
-import scroll from "../scroll animation.js"
+import { scroll } from "../scroll animation.js"
 
 import { stretchBody1, stretchBody2, stretchBody3, stretchBody4, stretchBody5, stretchBody6, stretchBody7 } from './content/stretch.js'
 import stretch_tour from "./images/stretch_tour.gif"

@@ -1,6 +1,6 @@
 import React from 'react'
 import { Divider, ImageList, ImageListItem } from "@mui/material"
-import scroll from "../scroll animation.js"
+import { scroll } from "../scroll animation.js"
 import { r1Body, r1Body2, r1Body3, r1Body4, r1Body5, r1Body6, r1Body7, r1Body8 } from "./content/robotics-1.js"
 
 import dofbot_with_blocks from "./images/dofbot_with_blocks.png"

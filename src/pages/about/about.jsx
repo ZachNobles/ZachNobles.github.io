@@ -48,10 +48,10 @@ const About = () => {
             <div id="about-website">
                 <p className="glyph">About this website</p>
                 <p className="exo">This website was made 
-                    with <a className="no-link-styling about-link" href="https://react.dev/" aria-label="React">React</a>
-                    &nbsp;and <a className="no-link-styling about-link" href="https://mui.com/" aria-label="MUI">MUI</a>
+                    with <a className="no-link-styling link" href="https://react.dev/" aria-label="React">React</a>
+                    &nbsp;and <a className="no-link-styling link" href="https://mui.com/" aria-label="MUI">MUI</a>
                     . You can look at the source 
-                    code <a className="no-link-styling about-link" href="https://github.com/ZachNobles/ZachNobles.github.io" aria-label="GitHub repo">here</a>
+                    code <a className="no-link-styling link" href="https://github.com/ZachNobles/ZachNobles.github.io" aria-label="GitHub repo">here</a>
                     &nbsp;if you really want to.
                 </p>
             </div>
