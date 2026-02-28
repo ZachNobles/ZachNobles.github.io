@@ -32,7 +32,7 @@ const Projects = () => {
         <div className="gap" style={{height:"2vh"}}></div>
         <Divider flexItem className="divider" style={{width: "inherit"}}/>
         <div className="gap" style={{height:"2vh"}}></div>
-
+        
         <ResearchProject />
         <Divider flexItem className="divider" style={{width: "inherit"}}/>
 

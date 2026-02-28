@@ -26,7 +26,7 @@ function App() {
               <Route exact path="/alex" element={<Alex />} />
               <Route exact path="/scrabble" element={<Scrabble />} />
               <Route exact path="/miscellaneous" element={<Miscellaneous />} />
-              <Route exact path="/binary" element={<Binary />} />
+              <Route exact path="/binary" element={<Binary />} />z
             </Routes>
         </Router>
     </div>
