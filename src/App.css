@@ -1,6 +1,6 @@
 body[data-theme="dark"] {
   --silver: #c0c0c0;
-  --purple: #6a19d5;
+  --accent: #6a19d5;
 
   --background-color: RGB(20, 20, 20);
   --text-color: white;
@@ -11,10 +11,10 @@ body[data-theme="dark"] {
   --button-text: var(--silver);
   --button-border: var(--silver);
 
-  --generic-button-border: var(--purple);
+  --generic-button-border: var(--accent);
 
-  --generic-radio-border: var(--purple);
-  --generic-radio-fill: var(--purple);
+  --generic-radio-border: var(--accent);
+  --generic-radio-fill: var(--accent);
 
   --icon-button: var(--silver);
   --icon-button-hover: white;
@@ -27,6 +27,11 @@ body[data-theme="dark"] {
   --divider: var(--silver);
 
   --textbox-border: var(--silver);
+
+  --drawer-background-color: RGB(25, 25, 25);
+  --drawer-text-color: var(--text-color);
+  --drawer-item-background: var(--drawer-background-color);
+  --drawer-item-border: var(--accent);
 }
 
 
@@ -144,7 +149,7 @@ body {
 }
 
 .generic-icon-button {
-  color: var(--icon-button);
+  color: var(--icon-button) !important;
   transition: 150ms !important;
 }
 
@@ -200,4 +205,20 @@ body {
   -ms-user-select: none; /* Internet Explorer/Edge */
   user-select: none; /* Non-prefixed version, currently
                     supported by Chrome, Edge, Opera and Firefox */
+}
+
+#projects-menu {
+  background-color: var(--drawer-background-color);
+  color: var(--drawer-text-color);
+}
+
+.projects-menu-link {
+  background-color: var(--drawer-item-background);
+  color: var(--drawer-text-color);
+  border: 2px solid var(--drawer-item-border);
+  transition: 150ms;
+}
+
+.projects-menu-link:hover {
+  background-color: var(--drawer-item-border);
 }

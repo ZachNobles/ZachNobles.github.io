@@ -21,7 +21,7 @@ const ResearchProject = () => {
         <div className="projects-container">
             <div className="pleft pimg-container"><img className="pimg" src={stretch_tour} alt="A Hello Robot Stretch RE1 navigating a small room" style={{minWidth: "20vw"}}></img></div>
             <div className="pright">
-                <div className="glyph ptitle no-highlight pointer" data-text="greeter robot" onClick={scroll}>greeter robot</div>
+                <div className="glyph ptitle no-highlight pointer" data-text="greeter robot" id="greeter robot" onClick={scroll}>greeter robot</div>
                 <div className="glyph psubtitle">research project - spring 2025 to present</div>
                 <Divider variant="middle" flexItem className="pdivider" style={{backgroundColor: "#b080fe"}}></Divider>
                 <div className="geometric pbody">{stretchBody1}</div>
