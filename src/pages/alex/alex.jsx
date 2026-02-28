@@ -1,5 +1,5 @@
 import React from 'react'
-import { IconButton, Tooltip } from '@mui/material';
+import { IconButton, Tooltip, Alert, AlertTitle } from '@mui/material';
 import HomeIcon from '@mui/icons-material/Home';
 import "./alex.css"
 
@@ -18,6 +18,11 @@ What really sets Alex apart, though, is his genuine care for others. He’s the 
 Additionally, Alex has some serious skills that make him even more impressive. Whether it’s his talent in a particular area or his extensive knowledge about certain topics, Alex has a way of impressing those around him with what he knows or can do. His passion and drive are inspiring, and he’s constantly pushing himself to improve. All of these qualities—the sense of humor, adventurous spirit, genuine care for others, and impressive abilities—are what make Alex undeniably cool.
 
         </p>
+
+    <Alert variant="filled" severity="warning" color="success">
+        <AlertTitle>Update February 2026</AlertTitle>
+        Alex has been offered a contract (that I assume he will be accepting) at Music City Drum and Bugle Corps! Pretty cool.
+    </Alert>
     </div>;
 }
 
