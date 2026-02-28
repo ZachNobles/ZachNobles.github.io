@@ -20,9 +20,9 @@
 #home-header, #misc-header {
     background: linear-gradient(
         to right,
-        #6a19d5,
-        #c0c0c0,
-        #6a19d5
+        var(--accent),
+        var(--accent2),
+        var(--accent)
     );
     background-clip: text;
     -webkit-background-clip: text;

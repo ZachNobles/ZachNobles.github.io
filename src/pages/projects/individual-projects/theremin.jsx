@@ -1,5 +1,5 @@
 import React from 'react'
-import { Divider, ImageList, ImageListItem } from "@mui/material"
+import { Divider } from "@mui/material"
 import scroll from "../scroll animation.js"
 
 import { body1, body2, body3, body4 } from './content/theremin.js'

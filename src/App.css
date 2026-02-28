@@ -1,32 +1,32 @@
 body[data-theme="dark"] {
-  --silver: #c0c0c0;
   --accent: #6a19d5;
+  --accent2: #c0c0c0;
 
   --background-color: RGB(20, 20, 20);
   --text-color: white;
-  --secondary-text-color: var(--silver);
-  --logo-default: var(--silver);
+  --secondary-text-color: var(--accent2);
+  --logo-default: var(--accent2);
   --logo-hover: white;
 
-  --button-text: var(--silver);
-  --button-border: var(--silver);
+  --button-text: var(--accent2);
+  --button-border: var(--accent2);
 
   --generic-button-border: var(--accent);
 
   --generic-radio-border: var(--accent);
   --generic-radio-fill: var(--accent);
 
-  --icon-button: var(--silver);
+  --icon-button: var(--accent2);
   --icon-button-hover: white;
 
-  --home-button: var(--silver);
+  --home-button: var(--accent2);
 
   --about-link-text: RGB(83, 165, 224);
   --about-link-hover: RGB(109, 193, 252);
 
-  --divider: var(--silver);
+  --divider: var(--accent2);
 
-  --textbox-border: var(--silver);
+  --textbox-border: var(--accent2);
 
   --drawer-background-color: RGB(25, 25, 25);
   --drawer-text-color: var(--text-color);

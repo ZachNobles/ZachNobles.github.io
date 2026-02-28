@@ -13,7 +13,8 @@ export function NavButton(link, label) {
 }
 
 function randomizeBackground(event) {
-    let gradient = `linear-gradient(${Math.floor(Math.random() * 360)}deg, #6a19d5, #c0c0c0)`
+    const accent = getComputedStyle(document.body).getPropertyValue("--accent").trim();
+    let gradient = `linear-gradient(${Math.floor(Math.random() * 360)}deg, ${accent}, #c0c0c0)`
 
     if (event.target.classList.contains("NavButton")) {
         event.target.style.backgroundImage = gradient;
