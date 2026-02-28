@@ -19,7 +19,7 @@ function TemporaryDrawer() {
     const DrawerList = (
         <div id="projects-menu" style={{width: "30vh", height: "inherit"}}>
             <div style={{margin: "2rem", display: "flex", flexDirection: "column", gap: "1rem"}}>
-                <a className="projects-menu-link" href="#theremin" onClick={toggleDrawer(false)}>Microcontroller Car</a>
+                <a className="projects-menu-link" href="#microcontroller car" onClick={toggleDrawer(false)}>Microcontroller Car</a>
                 <a className="projects-menu-link" href="#robotics I project" onClick={toggleDrawer(false)}>Robotics I Project</a>
                 <a className="projects-menu-link" href="#greeter robot" onClick={toggleDrawer(false)}>Greeter Robot</a>
                 <a className="projects-menu-link" href="#theremin" onClick={toggleDrawer(false)}>Theremin</a>

@@ -43,7 +43,7 @@ const ResearchProject = () => {
         <div className="projects-container">
             <div className="pleft pimg-container"><img className="pimg" style={{marginRight: "1vw"}} src={batteries_close} alt="A close shot of the robot's internal electronics"></img></div>
             <div className="pright pimg-container"><img className="pimg" src={batteries} alt="The robot disassembled again"></img>
-                <div className="geometric pbody">After we replaced the batteries, the robot worked for a few weeks beforeone day when it stopped turning on.</div>
+                <div className="geometric pbody">After we replaced the batteries, the robot worked for a few weeks before one day when it stopped turning on.</div>
             </div>
         </div>
 

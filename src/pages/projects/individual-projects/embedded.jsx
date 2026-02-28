@@ -13,7 +13,7 @@ const EmbeddedProject = () => {
             <div className="pleft pimg-container" style={{maxWidth: "100vw"}}><img className="pimg" src={car} alt="microcontroller car"></img>
             </div>
             <div className = "pright">
-                <div className="glyph ptitle no-highlight pointer" data-text="microcontroller car" onClick={scroll}>microcontroller car</div>
+                <div className="glyph ptitle no-highlight pointer" data-text="microcontroller car" id="microcontroller car" onClick={scroll}>microcontroller car</div>
                 <div className="glyph psubtitle">class project for embedded control - fall 2024</div>
                 <Divider variant="middle" flexItem className="pdivider" style={{backgroundColor: "#95191e"}}></Divider>
                 <div className="geometric pbody">{embeddedBody1}</div>
