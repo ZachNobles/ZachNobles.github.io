@@ -1,6 +1,6 @@
 import React from 'react'
 import { Divider, ImageList, ImageListItem } from "@mui/material"
-import scroll from "../scroll animation.js"
+import { scroll } from "../scroll animation.js"
 
 import { circuitsBody1 } from './content/circuits.js'
 import full_circuit from "./images/full_circuit.png"

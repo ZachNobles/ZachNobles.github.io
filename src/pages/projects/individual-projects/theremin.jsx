@@ -13,7 +13,7 @@ const MPSProject = () => {
         <div className="projects-container">
             <div className="pleft">
                 <div className="glyph ptitle no-highlight pointer" data-text="theremin" id="theremin" onClick={scroll}>theremin</div>
-                <div className="glyph psubtitle">class project for microprocessor systems - fall 2025</div>
+                <div className="glyph psubtitle">class project, microprocessor systems - fall 2025</div>
                 <Divider variant="middle" flexItem className="pdivider" style={{backgroundColor: "#8bfe80"}}></Divider>
                 <div className="geometric pbody">{body1}</div>
             </div>

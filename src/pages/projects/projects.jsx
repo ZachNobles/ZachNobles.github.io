@@ -9,6 +9,7 @@ import EmbeddedProject from './individual-projects/embedded.jsx';
 import ResearchProject from './individual-projects/stretch.jsx';
 import MPSProject from "./individual-projects/theremin.jsx";
 import SRP1Project from './individual-projects/SRP1.jsx';
+import DeepLearningProjects from './individual-projects/deep_learning.jsx';
 
 function TemporaryDrawer() {
     const [open, setOpen] = React.useState(false);
@@ -22,6 +23,7 @@ function TemporaryDrawer() {
             <div style={{margin: "2rem", display: "flex", flexDirection: "column", gap: "1rem"}}>
                 <a className="projects-menu-link" href="#microcontroller car" onClick={toggleDrawer(false)}>Microcontroller Car</a>
                 <a className="projects-menu-link" href="#robotics I project" onClick={toggleDrawer(false)}>Robotics I Project</a>
+                <a className="projects-menu-link" href="#deep-learning" onClick={toggleDrawer(false)}>Deep Learning Project</a>
                 <a className="projects-menu-link" href="#greeter robot" onClick={toggleDrawer(false)}>Greeter Robot</a>
                 <a className="projects-menu-link" href="#theremin" onClick={toggleDrawer(false)}>Theremin</a>
             </div>
@@ -70,6 +72,11 @@ const Projects = () => {
         <Divider flexItem className="divider" style={{width: "inherit"}}/>
         <div className="gap" style={{height:"2vh"}}></div>
         
+        <DeepLearningProjects />
+        <div className="gap" style={{height:"2vh"}}></div>
+        <Divider flexItem className="divider" style={{width: "inherit"}}/>
+        <div className="gap" style={{height:"2vh"}}></div>
+
         <ResearchProject />
         <div className="gap" style={{height:"2vh"}}></div>
         <Divider flexItem className="divider" style={{width: "inherit"}}/>
@@ -78,11 +85,6 @@ const Projects = () => {
         <MPSProject />
         <div className="gap" style={{height:"2vh"}}></div>
         <Divider flexItem className="divider" style={{width: "inherit"}}/>
-        <div className="gap" style={{height:"2vh"}}></div>
-
-        {/* <SRP1Project />
-        <div className="gap" style={{height:"2vh"}}></div>
-        <Divider flexItem className="divider" style={{width: "inherit"}}/> */}
 
         <div className="projects-container exo" style={{textAlign:"center"}}><div className="pboth">more projects to come, but it takes me a while to track down all the images and write descriptions</div></div>
         <div className="gap" style={{height: "10vh"}}></div>
