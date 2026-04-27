@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.8b626501.css",
-    "main.js": "/static/js/main.1d22f355.js",
+    "main.css": "/static/css/main.24a323b0.css",
+    "main.js": "/static/js/main.1de22f37.js",
     "static/js/568.6373781e.chunk.js": "/static/js/568.6373781e.chunk.js",
     "static/media/stretch_tour.gif": "/static/media/stretch_tour.a25f2119f7dae0475e73.gif",
     "static/media/wheels_spinning.gif": "/static/media/wheels_spinning.3a7e30943c12404366c0.gif",
@@ -16,7 +16,6 @@
     "static/media/open_NUC.jpg": "/static/media/open_NUC.cc2bf13821929d0acb27.jpg",
     "static/media/potentiometers.png": "/static/media/potentiometers.7956a369256dad79721a.png",
     "static/media/batteries.jpg": "/static/media/batteries.dd1423c2b1b88a341ee1.jpg",
-    "static/media/transformer_test.jpg": "/static/media/transformer_test.78fe05ab368af2b11dd4.jpg",
     "static/media/NUC_replaced.jpg": "/static/media/NUC_replaced.b3341f43600898c5fff8.jpg",
     "static/media/batteries_close.jpg": "/static/media/batteries_close.64399bd20840c1f22c3a.jpg",
     "static/media/theremin_circuitry.jpg": "/static/media/theremin_circuitry.cc12a5512944da522b8b.jpg",
@@ -64,12 +63,12 @@
     "static/media/map.png": "/static/media/map.a66f788075936ead2ba3.png",
     "static/media/RPI_Logo_Binary_White.png": "/static/media/RPI_Logo_Binary_White.92df1258eb033f33745c.png",
     "index.html": "/index.html",
-    "main.8b626501.css.map": "/static/css/main.8b626501.css.map",
-    "main.1d22f355.js.map": "/static/js/main.1d22f355.js.map",
+    "main.24a323b0.css.map": "/static/css/main.24a323b0.css.map",
+    "main.1de22f37.js.map": "/static/js/main.1de22f37.js.map",
     "568.6373781e.chunk.js.map": "/static/js/568.6373781e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.8b626501.css",
-    "static/js/main.1d22f355.js"
+    "static/css/main.24a323b0.css",
+    "static/js/main.1de22f37.js"
   ]
 }
