@@ -38,6 +38,8 @@ body, body[data-theme="dark"] {
 body {
   background-color: var(--background-color);
   color: var(--text-color);
+  display: grid;
+  justify-content: center;
 }
 
 .page {
