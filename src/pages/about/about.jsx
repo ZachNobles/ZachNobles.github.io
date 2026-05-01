@@ -25,24 +25,24 @@ const About = () => {
             </div>
             <div id="extracurriculars">
                 <p className="glyph">extracurriculars</p>
-                Pep Band<br/>The Forge<br/>Senate Academic Affairs Committee<br/>Senate Student Life Committee<br/>Senate Webtech Group<br/>
-                ECSE Undergraduate Student Council<br/>Robotics Club<br/>Class of 2027 Council<br/>Mercer Lab Research Group
+                Pep Band<br/>The Forge (a student-run 3D printer lab)<br/>Rensselaer Union Student Senate<br/>Senate Academic Affairs Committee<br/>Senate Student Life Committee<br/>Senate Webtech Group<br/>
+                ECSE Undergraduate Student Council<br/>Robotics Club<br/>Class of 2027 Council<br/>Mercer Lab Research Group<br/>RPI Student Advisory Council<br/>Alcohol, Other Drugs, and Hazing Advisory Committee
             </div>
 
             <div id="skills">
                 <p className="glyph">skills</p>
                 Python, Java, C++, C<br/>
-                HTML, CSS, Javascript, Typescript<br/>
-                React<br/>
+                HTML, CSS, Javascript, Typescript, React<br/>
                 data structures and algorithms<br/>
                 Git and GitHub<br/>
                 OpenCV<br/>
                 MATLAB<br/>
                 LTSpice & circuit design<br/>
                 embedded systems<br/>
-                computer aided design<br/>
-                communication<br/>
-                teaching<br/>
+                STM32 microcontrollers<br/>
+                computer aided design, Fusion 360, Siemens NX<br/>
+                ROS2, RVIZ, Gazebo<br/>
+                robot kinematics
             </div>
 
             <div id="about-website">
