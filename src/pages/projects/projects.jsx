@@ -8,7 +8,6 @@ import RoboticsProject from "./individual-projects/robotics1.jsx";
 import EmbeddedProject from './individual-projects/embedded.jsx';
 import ResearchProject from './individual-projects/stretch.jsx';
 import MPSProject from "./individual-projects/theremin.jsx";
-import SRP1Project from './individual-projects/SRP1.jsx';
 import CircuitsProject from './individual-projects/circuits.jsx';
 import DeepLearningProjects from './individual-projects/deep_learning.jsx';
 
