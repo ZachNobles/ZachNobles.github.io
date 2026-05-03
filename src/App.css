@@ -156,7 +156,7 @@ body {
 }
 
 .generic-icon-button:hover {
-  color: var(--icon-button-hover);
+  color: var(--icon-button-hover) !important;
   transform: scale(110%);
 }
 
@@ -210,6 +210,11 @@ body {
 }
 
 #projects-menu {
+  background-color: var(--drawer-background-color);
+  color: var(--drawer-text-color);
+}
+
+.drawer {
   background-color: var(--drawer-background-color);
   color: var(--drawer-text-color);
 }
