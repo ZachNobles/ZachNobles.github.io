@@ -229,3 +229,11 @@ body {
 .projects-menu-link:hover {
   background-color: var(--drawer-item-border);
 }
+
+.settings {
+  transition: transform 0.2s cubic-bezier(.27,.46,.83,.67);
+}
+
+.settings:hover {
+  transform: rotate(45deg);
+}

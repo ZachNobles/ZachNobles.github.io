@@ -37,7 +37,15 @@ function Menu() {
                     Background
                     <Switch 
                         checked={checked} 
-                        onChange={toggleSwitch} 
+                        onChange={toggleSwitch}
+                        sx={{
+                            '& .MuiSwitch-switchBase.Mui-checked': {
+                            color: getComputedStyle(document.body).getPropertyValue("--accent").trim(), // Thumb color when checked
+                            },
+                            '& .MuiSwitch-switchBase.Mui-checked + .MuiSwitch-track': {
+                            backgroundColor: getComputedStyle(document.body).getPropertyValue("--accent").trim(), // Track color when checked
+                            }
+                        }}
                     />
                 </div>
             </div>
@@ -47,7 +55,7 @@ function Menu() {
     return (
         <div>
             <Tooltip title="menu" placement="right" style={{position: "absolute"}}>
-                <IconButton onClick={toggleDrawer(true)} className="generic-icon-button" size="large"><SettingsIcon /></IconButton>
+                <IconButton onClick={toggleDrawer(true)} className="generic-icon-button settings" size="large"><SettingsIcon /></IconButton>
             </Tooltip>
             <Drawer open={open} onClose={toggleDrawer(false)}>
             {DrawerList}
