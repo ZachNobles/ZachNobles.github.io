@@ -1,4 +1,4 @@
-body, body[data-theme="dark"] {
+:root, :root[data-theme="dark"] {
   --accent: #6a19d5;
   --accent2: #c0c0c0;
 

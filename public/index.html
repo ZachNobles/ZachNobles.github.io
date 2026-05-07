@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
   <head>
     <meta charset="utf-8" />
     <link rel="icon" href="%PUBLIC_URL%/robot.ico" />
@@ -45,10 +45,19 @@
       }(window.location))
     </script>
 
+    <script>
+      (function() {
+        const savedColor = localStorage.getItem("accentColor");
+        if (savedColor) {
+          document.documentElement.style.setProperty("--accent", savedColor);
+        }
+      })();
+    </script>
+
 
   </head>
   
-  <body data-theme="dark">
+  <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
   </body>

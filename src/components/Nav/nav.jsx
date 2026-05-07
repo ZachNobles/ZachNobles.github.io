@@ -4,9 +4,9 @@ import "./nav.css"
 
 const Nav = () => {
     return <div id="nav">
-        {NavButton("projects", "projects")}
-        {NavButton("about", "about")}
-        {NavButton("miscellaneous", "misc.")}
+        {NavButton("projects", "Projects")}
+        {NavButton("about", "About")}
+        {NavButton("miscellaneous", "Misc.")}
     </div>;
 }
 

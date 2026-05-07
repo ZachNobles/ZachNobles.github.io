@@ -3,7 +3,7 @@ import { Divider } from "@mui/material"
 import { embeddedBody1, embeddedBody2, embeddedBody3, embeddedBody4, embeddedBody5 } from './content/embedded.js'
 import { scroll } from "../scroll animation.js"
 import car from "./images/beep beep.png"
-import potentiometers from "./images/potentiometers.png"
+// import potentiometers from "./images/potentiometers.png"
 import wheels_spinning from "./images/wheels_spinning.gif"
 import compass_still from "./images/compass_still.png"
 
@@ -19,16 +19,16 @@ const EmbeddedProject = () => {
                 <div className="geometric pbody">{embeddedBody1}</div>
             </div>
         </div>
+        <div className="gap"></div>
 
         <div className="projects-container">
             <div className="pleft pbody">
                 {embeddedBody2}
                 <div className="pimg-container">
-                    <img className="pimg" src={wheels_spinning} alt="wheels spinning" style={{maxHeight: "20rem"}}></img>
                 </div>
             </div>
             <div className="pright pimg-container">
-                <img className="pimg" src={potentiometers} alt="car wired to a breadboard with potentiometers"></img>
+                <img className="pimg" src={wheels_spinning} style={{maxHeight: "15rem"}} alt="car wired to a breadboard with potentiometers"></img>
             </div>
         </div>
 
