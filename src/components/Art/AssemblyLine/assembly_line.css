@@ -1,0 +1,108 @@
+.assembly-line-container {
+    position: fixed;
+    inset: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: transparent;
+    overflow: hidden;
+    z-index: -1;
+
+    --base-opacity: 0.4;
+}
+
+.assembly-line {
+    position: fixed;
+    width: 110vw;
+    height: 20vh;
+    top: 20vh;
+    left: -5vw;
+    border: 3px solid var(--accent);
+    opacity: var(--base-opacity);
+}
+
+.assembly-line-side {
+    position: fixed;
+    width: 110vw;
+    height: 10vh;
+    top: 40vh;
+    left: -5vw;
+    border-bottom: 3px solid var(--accent);
+    opacity: var(--base-opacity);
+}
+
+.belt {
+    position: fixed;
+    width: calc(100% + 200px);
+    height: inherit;
+    left: -200px;
+    background: repeating-linear-gradient( -50deg, var(--accent), var(--accent) 5px, transparent 5px, transparent 150px );
+    animation: bannermove 2s linear infinite;
+    opacity: var(--base-opacity);
+}
+
+@keyframes bannermove {
+  0% {
+      transform: translate(0, 0);
+  }
+  100% {
+      transform: translate(195px, 0);
+  }
+}
+
+.arm {
+    position: fixed;
+    width: 10vw;
+    height: 20vh;
+    top: 65vh;
+    left: 20vw;
+    opacity: var(--base-opacity);
+}
+
+.arm-base {
+    position: fixed;
+    width: 10vw;
+    height: 15vw;
+    transform: rotate(50deg);
+    border: 3px solid var(--accent);
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.arm-link-container {
+    top: -10vw;
+    perspective: 1000px;
+    width: 0;
+    height: 0;
+}
+
+.arm-link {
+    position: relative;
+    width: 5vw;
+    height: 20vh;
+    transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
+    transform: rotateX(-20deg) rotateY(-30deg);
+}
+
+.link-face-front {
+    position: absolute;
+    width: 4vw;
+    height: 20vh;
+    background-color: var(--accent);
+    backface-visibility: hidden;
+}
+
+.link-face-right {
+    position: absolute;
+    width: 5vw;
+    height: 20vh;
+    background-color: var(--accent);
+    
+    /* Move to the right edge and rotate */
+    left: 4vw; 
+    transform-origin: left;
+    transform: rotateY(90deg);
+}
