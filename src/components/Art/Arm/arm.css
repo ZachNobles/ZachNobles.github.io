@@ -1,0 +1,11 @@
+.arm-container {
+    position: fixed;
+    inset: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: transparent;
+    overflow: hidden;
+    z-index: -1;
+
+    --base-opacity: 0.1;
+}
