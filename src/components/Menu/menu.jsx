@@ -128,7 +128,7 @@ function Menu() {
                 <div className="exo"
                     style={{marginTop: "-1rem", fontSize: "0.6rem", textAlign: "center", display: "flex", flexFlow: "row wrap", alignItems: "center"}}>
                     <p onClick={() => window.location.reload()} className="pointer">Refresh</p>
-                    &nbsp;to apply to the background
+                    &nbsp;to apply to some backgrounds
                 </div>
             </div>
         </div>
