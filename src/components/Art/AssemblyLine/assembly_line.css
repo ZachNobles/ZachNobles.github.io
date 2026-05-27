@@ -1,0 +1,233 @@
+.arm-container {
+    position: fixed;
+    inset: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: transparent;
+    overflow: hidden;
+    z-index: -1;
+
+    --base-opacity: 0.1;
+    --animation-duration: 10s;
+    --animation-easing-function: ease-in-out;
+}
+
+.assembly-line {
+    position: fixed;
+    width: 110vw;
+    height: 20vh;
+    top: 60vh;
+    left: -5vw;
+    border: 3px solid var(--accent);
+    opacity: var(--base-opacity);
+}
+
+.assembly-line-side {
+    position: fixed;
+    width: 110vw;
+    height: 10vh;
+    top: 80vh;
+    left: -5vw;
+    border-bottom: 3px solid var(--accent);
+    opacity: var(--base-opacity);
+}
+
+.belt {
+    position: fixed;
+    width: calc(100% + 200px);
+    height: inherit;
+    left: -200px;
+    background: repeating-linear-gradient( -50deg, var(--accent), var(--accent) 5px, transparent 5px, transparent 150px );
+    animation: conveyor-animation 2s linear infinite;
+}
+
+@keyframes conveyor-animation {
+  0% {
+      transform: translate(0, 0);
+  }
+  100% {
+      transform: translate(195px, 0);
+  }
+}
+
+/* Arm */
+
+.arm {
+    position: fixed;
+    left: 40vw;
+    opacity: var(--base-opacity);
+}
+
+.arm-link-01, .arm-link-12, .arm-link-23 {
+    position: absolute;
+    background-color: var(--accent);
+    border: 2px solid hsl(from var(--accent) h s calc(l + 20));
+    border-radius: 1rem;
+}
+
+.arm-link-01 {
+    width: 8rem;
+    max-width: 30vw;
+    height: 20rem;
+
+    animation: animation-link-01 var(--animation-duration) var(--animation-easing-function) infinite;
+}
+
+.arm-link-12 {
+    width: inherit;
+    max-width: 30vw;
+    height: 20rem;
+    top: 70%;
+    left: -2px;
+
+    transform-origin: center calc(0% + 3rem);
+    animation: animation-link-12 var(--animation-duration) var(--animation-easing-function) infinite;
+}
+
+.arm-link-23 {
+    width: inherit;
+    max-width: 30vw;
+    height: 20rem;
+    top: 70%;
+    left: -2px;
+    transform-style: preserve-3d;
+
+    transform-origin: center calc(0% + 3rem);
+    animation: animation-link-23 var(--animation-duration) var(--animation-easing-function) infinite;
+}
+
+.arm-gripper-left-1, .arm-gripper-right-1 {
+    position: absolute;
+    width: 1rem;
+    height: 6rem;
+    background-color: var(--accent);
+    border: 2px solid hsl(from var(--accent) h s calc(l + 20));
+    border-radius: 1rem;
+    top: 90%;
+    transform-origin: center calc(0% + 1rem);
+    transform: translateZ(-1px);
+}
+
+.arm-gripper-left-1 {
+    left: calc(20% - 2px);
+    animation: animation-gripper-left-1 var(--animation-duration) var(--animation-easing-function) infinite;
+}
+
+.arm-gripper-right-1 {
+    left: calc(80% - 1rem - 2px);
+    animation: animation-gripper-right-1 var(--animation-duration) var(--animation-easing-function) infinite;
+}
+
+.arm-gripper-left-2, .arm-gripper-right-2 {
+    position: absolute;
+    width: 1rem;
+    height: 6rem;
+    background-color: var(--accent);
+    border: 2px solid hsl(from var(--accent) h s calc(l + 20));
+    border-radius: 1rem;
+    top: 80%;
+    left: calc(20% - 2px);
+    transform-origin: center calc(0% + 1rem);
+}
+
+.arm-gripper-left-2 {
+    rotate: -60deg;
+    animation: animation-gripper-left-2 var(--animation-duration) var(--animation-easing-function) infinite;
+}
+
+.arm-gripper-right-2 {
+    rotate: 60deg;
+    animation: animation-gripper-right-2 var(--animation-duration) var(--animation-easing-function) infinite;
+}
+
+@keyframes animation-link-01 {
+    0%, 25% { transform: translate(0, -70vh); } 
+    50%, 75% { transform: translate(-40vw, 0vh); }
+    100% { transform: translate(0, -70vh); } 
+}
+
+@keyframes animation-link-12 {
+    0%, 25% { rotate: 0deg } 
+    50%, 75% { rotate: 45deg }
+    100% { rotate: 0deg }
+}
+
+@keyframes animation-link-23 {
+    0%, 25% { rotate: 0deg } 
+    50%, 75% { rotate: -45deg }
+    100% { rotate: 0deg }
+}
+
+@keyframes animation-gripper-left-1 {
+    0% { rotate: 30deg }
+    25%, 50% { rotate: 60deg }
+    75%, 100% { rotate: 30deg }
+}
+
+@keyframes animation-gripper-right-1 {
+    0% { rotate: -30deg }
+    25%, 50% { rotate: -60deg }
+    75%, 100% { rotate: -30deg }
+}
+
+@keyframes animation-gripper-left-2 {
+    0% { rotate: -30deg }
+    25%, 50% { rotate: -60deg }
+    75%, 100% { rotate: -30deg }
+}
+
+@keyframes animation-gripper-right-2 {
+    0% { rotate: 30deg }
+    25%, 50% { rotate: 60deg }
+    75%, 100% { rotate: 30deg }
+}
+
+/* Boxes */
+.box {
+    position: fixed;
+    width: 7.35rem;
+    height: 7.35rem;
+    background-color: var(--accent);
+    border: 2px solid hsl(from var(--accent) h s calc(l + 20));
+    border-radius: 0.5rem;
+    opacity: var(--base-opacity);
+    overflow: hidden;
+    display: grid;
+    place-items: center;
+}
+
+.box-inner {
+    position: absolute;
+    width: 5.85rem;
+    height: 5.85rem;
+    border: 2px solid hsl(from var(--accent) h s calc(l + 20));
+    border-radius: 0.25rem;
+    overflow: hidden;
+    display: grid;
+    place-items: center;
+}
+
+.box-icon {
+    font-size: 4rem !important;
+    color: hsl(from var(--accent) h s calc(l + 20)) !important;
+}
+
+#box-1 {
+    animation: animation-box-1 10s linear infinite;
+}
+
+#box-2 {
+    animation: animation-box-2 10s var(--animation-easing-function) infinite;
+}
+
+@keyframes animation-box-1 {
+    0%, 4% { translate: calc(40vw + 6.5%) calc(52rem - 70vh); animation-timing-function: cubic-bezier(0.5, 0, 1, 0.5);}
+    8% { translate: calc(40vw + 6.5%) calc(57vh); }
+    100% { translate: 1530px calc(57vh); }
+}
+
+@keyframes animation-box-2 {
+    0%, 75% { translate: calc(-10rem) 95vh; }
+    100%, 100% { translate: calc(40vw + 6.5%) calc(52rem - 70vh); }
+
+}

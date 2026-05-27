@@ -1,0 +1,55 @@
+.traces {
+    position: fixed;
+    inset: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: transparent;
+    overflow: hidden;
+    z-index: -1;
+
+    
+    background-image:
+        linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+    background-size: 28px 28px;
+
+    --base-opacity: 0.0;
+}
+
+.trace-seg {
+    position: absolute;
+    pointer-events: none;
+    opacity: var(--base-opacity);
+}
+
+.trace-seg:not(.trace-seg-pulse) {
+    opacity: calc(var(--base-opacity) + 0.2);
+}
+
+@keyframes trace-pulse {
+    0%, 100% { opacity: var(--base-opacity); filter: brightness(1); }
+    50%      { opacity: 0.4; filter: brightness(1.8) drop-shadow(0 0 4px currentColor); }
+}
+
+.trace-seg-pulse {
+    animation: trace-pulse linear infinite;
+}
+
+.via {
+    position: absolute;
+    border-style: solid;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    pointer-events: none;
+    opacity: var(--base-opacity);
+}
+
+.via-pulse {
+    animation: trace-pulse linear infinite;
+}
+
+.via:not(.via-pulse) {
+    opacity: calc(var(--base-opacity) + 0.2);
+}

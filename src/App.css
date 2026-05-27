@@ -1,4 +1,4 @@
-body, body[data-theme="dark"] {
+:root, :root[data-theme="dark"] {
   --accent: #6a19d5;
   --accent2: #c0c0c0;
 
@@ -156,7 +156,7 @@ body {
 }
 
 .generic-icon-button:hover {
-  color: var(--icon-button-hover);
+  color: var(--icon-button-hover) !important;
   transform: scale(110%);
 }
 
@@ -214,6 +214,11 @@ body {
   color: var(--drawer-text-color);
 }
 
+.drawer {
+  background-color: var(--drawer-background-color);
+  color: var(--drawer-text-color);
+}
+
 .projects-menu-link {
   background-color: var(--drawer-item-background);
   color: var(--drawer-text-color);
@@ -223,4 +228,12 @@ body {
 
 .projects-menu-link:hover {
   background-color: var(--drawer-item-border);
+}
+
+.settings {
+  transition: transform 0.2s cubic-bezier(.27,.46,.83,.67);
+}
+
+.settings:hover {
+  transform: rotate(45deg);
 }

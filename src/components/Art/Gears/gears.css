@@ -1,0 +1,65 @@
+.gear-container {
+    position: fixed;
+    inset: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: transparent;
+    overflow: hidden;
+    z-index: -1;
+
+    --base-opacity: 0.1;
+}
+
+.gear {
+    position: absolute;
+    border-radius: 50%;
+    box-sizing: border-box;
+    background-color: var(--accent);
+    opacity: var(--base-opacity);
+    animation-fill-mode: forwards;
+}
+
+.gear-24-cw {
+    animation: gear-24-cw 1.5s linear infinite;
+}
+
+.gear-12-ccw {
+    animation: gear-12-ccw 1.5s linear infinite;
+}
+
+.gear-12-cw {
+    animation: gear-12-cw 1.5s linear infinite;
+}
+
+.gear-8-ccw {
+    animation: gear-8-ccw 1.5s linear infinite;
+}
+
+.gear-8-cw {
+    animation: gear-8-cw 1.5s linear infinite;
+}
+
+@keyframes gear-24-cw {
+    0% { transform: rotate(0deg); }
+    25%, 100% { transform: rotate(45deg); }
+}
+
+@keyframes gear-12-ccw {
+    0% { transform: rotate(0deg); }
+    25%, 100% { transform: rotate(-90deg); }
+}
+
+@keyframes gear-12-cw {
+    0% { transform: rotate(0deg); }
+    25%, 100% { transform: rotate(90deg); }
+}
+
+@keyframes gear-8-ccw {
+    0% { transform: rotate(0deg); }
+    25%, 100% { transform: rotate(-135deg); }
+}
+
+@keyframes gear-8-cw {
+    0% { transform: rotate(0deg); }
+    25%, 100% { transform: rotate(135deg); }
+}

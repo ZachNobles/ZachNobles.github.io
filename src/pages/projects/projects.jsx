@@ -21,8 +21,8 @@ function TemporaryDrawer() {
     const DrawerList = (
         <div id="projects-menu" style={{width: "30vh", height: "inherit"}}>
             <div style={{margin: "2rem", display: "flex", flexDirection: "column", gap: "1rem"}}>
-                <a className="projects-menu-link" href="#microcontroller car" onClick={toggleDrawer(false)}>Microcontroller Car</a>
                 <a className="projects-menu-link" href="#robotics I project" onClick={toggleDrawer(false)}>Robotics I Project</a>
+                <a className="projects-menu-link" href="#microcontroller car" onClick={toggleDrawer(false)}>Microcontroller Car</a>
                 <a className="projects-menu-link" href="#deep-learning" onClick={toggleDrawer(false)}>Various AI Models</a>
                 <a className="projects-menu-link" href="#air pressure monitor" onClick={toggleDrawer(false)}>Air Pressure Monitor</a>
                 <a className="projects-menu-link" href="#greeter robot" onClick={toggleDrawer(false)}>Greeter Robot</a>
@@ -63,12 +63,12 @@ const Projects = () => {
         <Divider flexItem className="divider" style={{width: "inherit"}}/>
         <div className="gap"></div>
 
-        <EmbeddedProject />
+        <RoboticsProject />
         <div className="gap" style={{height:"2vh"}}></div>
         <Divider flexItem className="divider" style={{width: "inherit"}}/>
         <div className="gap" style={{height:"2vh"}}></div>
 
-        <RoboticsProject />
+        <EmbeddedProject />
         <div className="gap" style={{height:"2vh"}}></div>
         <Divider flexItem className="divider" style={{width: "inherit"}}/>
         <div className="gap" style={{height:"2vh"}}></div>

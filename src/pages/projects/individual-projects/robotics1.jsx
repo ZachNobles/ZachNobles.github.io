@@ -1,7 +1,7 @@
 import React from 'react'
 import { Divider, ImageList, ImageListItem } from "@mui/material"
 import { scroll } from "../scroll animation.js"
-import { r1Body, r1Body2, r1Body3, r1Body4, r1Body5, r1Body6, r1Body7, r1Body8 } from "./content/robotics-1.js"
+import { r1Body, r1Body3, r1Body4, r1Body5, r1Body6, r1Body7, r1Body8 } from "./content/robotics-1.js"
 
 import dofbot_with_blocks from "./images/dofbot_with_blocks.png"
 import dofbot_fk from "./images/dofbot_fk.png"
@@ -31,10 +31,14 @@ const RoboticsProject = () => {
             <div className="pright pimg-container"><img className="pimg" src={dofbot_with_blocks} alt="robot arm with colored blocks"></img></div>
         </div>
 
+        <div className="gap"></div>
+
         <div className="projects-container">
-            <div className="pleft pimg-container"><img className="pimg" src={dofbot_fk} alt = "robot arm posed at an angle"></img>{r1Body2}</div>
-            <div className="pright pbody pimg-container"><img className="pimg" src={dofbot_fk2} alt = "robot arm posed at a different angle"></img></div>
+            <div className="pleft pimg-container" style={{marginRight: "2vw"}}><img className="pimg" src={dofbot_fk} alt = "robot arm posed at an angle"></img></div>
+            <div className="pright pimg-container"><img className="pimg" src={dofbot_fk2} alt = "robot arm posed at a different angle"></img></div>
         </div>
+
+        <div className="gap"></div>
 
         <div className="projects-container">
             <div className="pleft pimg-container"><img className="pimg" src={matlab_arm} alt = "robot arm posed at an angle"></img></div>

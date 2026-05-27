@@ -1,6 +1,6 @@
 import React from 'react'
 import "./about.css"
-import me from "../../images/me.jpg"
+import me from "../../images/me_2.jpg"
 import { IconButton, Tooltip } from '@mui/material';
 import HomeIcon from '@mui/icons-material/Home';
 import { aboutBody1, aboutBody2, aboutBody3 } from "./about-body";
@@ -18,7 +18,7 @@ const About = () => {
                     {aboutBody1}<br/><br/>{aboutBody2}<br/><br/>{aboutBody3}
                 </div>
             </div>
-            <div id="about-img" style={{backgroundImage: `url(${me})`, borderRadius: "0.25rem", marginTop:"1rem"}}>
+            <div id="about-img" style={{backgroundImage: `url(${me})`, borderRadius: "0.25rem", marginTop:"2rem"}}>
                 <figcaption style={{display: "none"}}>
                     Photo taken by Daniel Collins, ca. 2024
                 </figcaption>
