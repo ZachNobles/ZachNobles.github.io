@@ -127,7 +127,6 @@ const placeGear = (gear_list, rng, target_gear, parent_gear, className) => {
 
 const generateGears = () => {
     const rng = makeRng(Date.now());
-    var COLOR = document.documentElement.style.getPropertyValue("--accent").trim();
 
     const gear0 = { r: 40, x: -5, y: -5, teeth: 24, baseRotation: 0, id: 0 }
     let placed_gears = [gear0]

@@ -1,3 +1,10 @@
+body:has(#projects-main-container) {
+    background-image:
+        linear-gradient(color-mix(in srgb, var(--accent2), transparent 96%) 1px, transparent 1px),
+        linear-gradient(90deg, color-mix(in srgb, var(--accent2), transparent 96%) 1px, transparent 1px);
+    background-size: 34px 34px;
+}
+
 #projects-main-container {
     width: inherit;
 
