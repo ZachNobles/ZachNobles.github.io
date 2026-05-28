@@ -1,6 +1,6 @@
 import React from 'react'
 import "./about.css"
-import me from "../../images/me_2.jpg"
+import me from "../../images/me.jpg"
 import { IconButton, Tooltip } from '@mui/material';
 import HomeIcon from '@mui/icons-material/Home';
 import { aboutBody1, aboutBody2, aboutBody3 } from "./about-body";
