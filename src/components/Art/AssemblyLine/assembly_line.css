@@ -34,20 +34,25 @@
 
 .belt {
     position: fixed;
-    width: calc(100% + 200px);
+    width: calc(100% + 20vw);
     height: inherit;
-    left: -200px;
-    background: repeating-linear-gradient( -50deg, var(--accent), var(--accent) 5px, transparent 5px, transparent 150px );
-    animation: conveyor-animation 2s linear infinite;
+    left: -10vw;
+    
+    background: linear-gradient(to right, 
+        var(--accent) 0%, 
+        var(--accent) 3%, 
+        transparent 3%, 
+        transparent 100%
+    );
+    
+    background-size: 10vw 100%; 
+    transform: skewX(-25deg); 
+    animation: conveyor-animation 3s linear infinite;
 }
 
 @keyframes conveyor-animation {
-  0% {
-      transform: translate(0, 0);
-  }
-  100% {
-      transform: translate(195px, 0);
-  }
+  0% { transform: translateX(0) skewX(-25deg); }
+  100% { transform: translateX(20vw) skewX(-25deg); }
 }
 
 /* Arm */
@@ -68,7 +73,7 @@
 .arm-link-01 {
     width: 8rem;
     max-width: 30vw;
-    height: 20rem;
+    height: 30vh;
 
     animation: animation-link-01 var(--animation-duration) var(--animation-easing-function) infinite;
 }
@@ -76,7 +81,7 @@
 .arm-link-12 {
     width: inherit;
     max-width: 30vw;
-    height: 20rem;
+    height: 30vh;
     top: 70%;
     left: -2px;
 
@@ -87,7 +92,7 @@
 .arm-link-23 {
     width: inherit;
     max-width: 30vw;
-    height: 20rem;
+    height: 30vh;
     top: 70%;
     left: -2px;
     transform-style: preserve-3d;
@@ -141,9 +146,9 @@
 }
 
 @keyframes animation-link-01 {
-    0%, 25% { transform: translate(0, -70vh); } 
+    0%, 25% { transform: translate(0, -50vh); } 
     50%, 75% { transform: translate(-40vw, 0vh); }
-    100% { transform: translate(0, -70vh); } 
+    100% { transform: translate(0, -50vh); } 
 }
 
 @keyframes animation-link-12 {
@@ -221,13 +226,13 @@
 }
 
 @keyframes animation-box-1 {
-    0%, 4% { translate: calc(40vw + 6.5%) calc(52rem - 70vh); animation-timing-function: cubic-bezier(0.5, 0, 1, 0.5);}
+    0%, 4% { translate: calc(40vw + 6.5%) 28vh; animation-timing-function: cubic-bezier(0.5, 0, 1, 0.5);}
     8% { translate: calc(40vw + 6.5%) calc(57vh); }
-    100% { translate: 1530px calc(57vh); }
+    100% { translate: 102vw calc(57vh); }
 }
 
 @keyframes animation-box-2 {
-    0%, 75% { translate: calc(-10rem) 95vh; }
-    100%, 100% { translate: calc(40vw + 6.5%) calc(52rem - 70vh); }
+    0%, 75% { translate: calc(4rem - 16vh - 3.6rem) 73vh; }
+    100% { translate: calc(40vw + 6.5%) 28vh; }
 
 }
