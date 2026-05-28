@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.e48fe2b3.css",
-    "main.js": "/static/js/main.5b3ad7bb.js",
+    "main.css": "/static/css/main.55d5b91e.css",
+    "main.js": "/static/js/main.53a11e50.js",
     "static/js/568.6373781e.chunk.js": "/static/js/568.6373781e.chunk.js",
     "static/media/stretch_tour.gif": "/static/media/stretch_tour.a25f2119f7dae0475e73.gif",
     "static/media/wheels_spinning.gif": "/static/media/wheels_spinning.3a7e30943c12404366c0.gif",
@@ -61,12 +61,12 @@
     "static/media/map.png": "/static/media/map.a66f788075936ead2ba3.png",
     "static/media/RPI_Logo_Binary_White.png": "/static/media/RPI_Logo_Binary_White.92df1258eb033f33745c.png",
     "index.html": "/index.html",
-    "main.e48fe2b3.css.map": "/static/css/main.e48fe2b3.css.map",
-    "main.5b3ad7bb.js.map": "/static/js/main.5b3ad7bb.js.map",
+    "main.55d5b91e.css.map": "/static/css/main.55d5b91e.css.map",
+    "main.53a11e50.js.map": "/static/js/main.53a11e50.js.map",
     "568.6373781e.chunk.js.map": "/static/js/568.6373781e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e48fe2b3.css",
-    "static/js/main.5b3ad7bb.js"
+    "static/css/main.55d5b91e.css",
+    "static/js/main.53a11e50.js"
   ]
 }
